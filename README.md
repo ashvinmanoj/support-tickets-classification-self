@@ -1,28 +1,29 @@
 # Table of contents
 1. [Project description](#1-project-description)  
 2. [Results and learnings](#2-results-and-learnings)  
-    2.1. [Main challenge and initial assumptions](#21-main-challenge-and-initial-assumptions)  
+<!--     2.1. [Main challenge and initial assumptions](#21-main-challenge-and-initial-assumptions)  -->
     2.2. [Dataset](#22-dataset)  
     2.3. [Training and evaluation results](#23-training-and-evaluation-results)    
     2.4. [Model deployment and usage](#24-model-deployment-and-usage)
 3. [Run the example](#3-run-the-example)  
     3.1. [Prerequisites](#31-prerequisites)  
     3.2. [Train and evaluate the model](#32-train-and-evaluate-the-model)  
-    3.3. [Deploy web service](#33-deploy-web-service)
-4. [Code highlights](#4-code-highlights)  
+<!--     3.3. [Deploy web service](#33-deploy-web-service) -->
+<!--  4. [Code highlights](#4-code-highlights)  -->
 
 <br>
 
 # 1. Project description 
 [[back to the top]](#table-of-contents)
 
-This case study shows how to create a model for **text analysis and classification** and deploy it as a **web service in Azure cloud** in order to automatically **classify support tickets**.<br>
-This project is a proof of concept made by Microsoft (Commercial Software Engineering team) in collaboration with [Endava](http://endava.com/en).<br>
+This case study shows how to create a model for **text analysis and classification** .<br>
+<!-- and deploy it as a **web service in Azure cloud** in order to automatically **classify support tickets**.<br> -->
+<!--  This project is a proof of concept made by Microsoft (Commercial Software Engineering team) in collaboration with [Endava](http://endava.com/en).<br>
 Our combined team tried 3 different approaches to tackle this challenge using:
 - [Azure Machine Learning Studio](https://studio.azureml.net/) - drag-and-drop machine learning tools
 - [Microsoft Cognitive Toolkit (CNTK)](https://github.com/Microsoft/CNTK) - deep neural networks framework
 - [Azure Machine Learning service](https://docs.microsoft.com/azure/machine-learning/service) - with Python and classic machine learning algorithms
-
+-->
 
 
 #### What will you find inside:     #### 
