@@ -5,7 +5,7 @@
     2.1. [Email content]
     2.2. [Dataset](#22-dataset)  
     2.3. [Training and evaluation results](#23-training-and-evaluation-results)    
-    2.4. [Model deployment and usage](#24-model-deployment-and-usage)
+<!--     2.4. [Model deployment and usage](#24-model-deployment-and-usage)-->
 3. [Run the example](#3-run-the-example)  
     3.1. [Prerequisites](#31-prerequisites)  
     3.2. [Train and evaluate the model](#32-train-and-evaluate-the-model)  
@@ -72,15 +72,16 @@ Our combined team tried 3 different approaches to tackle this challenge using:
 
 - For the sake of this repository, data have been stripped out of any sensitive information and anonymized (encrypted). In the original solution we worked on a full dataset without any encryptions. You can download anonymized dataset from [here](https://privdatastorage.blob.core.windows.net/github/support-tickets-classification/datasets/all_tickets.csv).
 
-- Example of anonymized and preprocessed data from [AML Workbench](https://docs.microsoft.com/en-us/azure/machine-learning/preview/quickstart-installation) view:  
+- Example of anonymized and preprocessed data view:  
 ![](docs/sample_data.jpg)
 
+<!-- 
   >[!Important]
   >[Azure Machine Learning service](https://docs.microsoft.com/azure/machine-learning/service) no longer supports the deprecated Workbench tool.
 
 - Below you can see a sample data transformation flow we used while preparing our dataset:  
 ![](docs/data_steps.jpg)
-
+-->
 - After evaluating the data we quickly discovered that distribution of values for most of columns we wanted to classify is strongly unbalanced with some of the unique values represented by even as low as 1-2 samples. There are [multiple techniques](https://shiring.github.io/machine_learning/2017/04/02/unbalanced) to deal with that kind of issues but due to limited amount of time for this POC we were not able to test them in action.   
 
 - Distribution of values for each column:  
@@ -107,10 +108,10 @@ Our combined team tried 3 different approaches to tackle this challenge using:
 ## 2.3. Training and evaluation results ##
 [[back to the top]](#table-of-contents)
 
-In order to train our models, we used [Azure Machine Learning Services](https://azure.microsoft.com/en-us/services/machine-learning-services/) to run training jobs with different parameters and then compare the results and pick up the one with the best values.:
+<!--  In order to train our models, we used [Azure Machine Learning Services](https://azure.microsoft.com/en-us/services/machine-learning-services/) to run training jobs with different parameters and then compare the results and pick up the one with the best values.:
 
 ![](docs/workbench_runs_1.jpg)
-
+-->
 To train models we tested 2 different algorithms: [SVM](http://scikit-learn.org/stable/modules/generated/sklearn.linear_model.SGDClassifier.html) and [Naive Bayes](http://scikit-learn.org/stable/modules/naive_bayes.html#multinomial-naive-bayes). In both cases results were pretty similar but for some of the models, Naive Bayes performed much better (especially after applying [hyperparameters](https://en.wikipedia.org/wiki/Hyperparameter)) so at some point we decided to work with NB only.    
 
 Below you can find some of the results of models we trained to predict different properties:
@@ -153,6 +154,8 @@ Below you can find some of the results of models we trained to predict different
 
 <br>
 
+
+<!-- 
 ## 2.4. Model deployment and usage ##
 [[back to the top]](#table-of-contents)
 
@@ -165,7 +168,7 @@ The project we based our service on with code and all the deployment scripts can
 ![Demo](docs/postman_1.jpg)
 
 <br>
-
+-->
 # 3. Run the example
 ## 3.1. Prerequisites
 [[back to the top]](#table-of-contents)
@@ -439,7 +442,7 @@ In order to deploy it to an environment like [Azure App Service](https://azure.m
                 )
             )
         ```
-
+<!-- 
 - [webservice.py](webservice/webservice.py) - 
 
     - Loading pretrained models from serialized files using pickle:
@@ -473,3 +476,4 @@ In order to deploy it to an environment like [Azure App Service](https://azure.m
             logging.info("Request sent to evaluation - %s" % time.strftime("%Y-%m-%d %H:%M:%S", ts))
             return jsonify({"ticket_type": predicted[0]})
         ```
+-->
