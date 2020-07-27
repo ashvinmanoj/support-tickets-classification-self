@@ -2,6 +2,7 @@
 1. [Project description](#1-project-description)  
 2. [Results and learnings](#2-results-and-learnings)  
 <!--     2.1. [Main challenge and initial assumptions](#21-main-challenge-and-initial-assumptions)  -->
+    2.1. [Email content]
     2.2. [Dataset](#22-dataset)  
     2.3. [Training and evaluation results](#23-training-and-evaluation-results)    
     2.4. [Model deployment and usage](#24-model-deployment-and-usage)
@@ -30,10 +31,10 @@ Our combined team tried 3 different approaches to tackle this challenge using:
 - How to clean and prepare text data and featurize it to make it valuable for machine learning scenarios
 - How to strip the data from any sensitive information and also anonymize/encrypt it
 - How to create a classification model using Python modules like: [sklearn](http://scikit-learn.org/stable/), [nltk](https://www.nltk.org/), [matplotlib](https://matplotlib.org/), [pandas](https://pandas.pydata.org/)
-- How to create a web service with a trained model and deploy it to Azure
-- How to leverage [Azure Machine Learning Service](https://azure.microsoft.com/en-us/services/machine-learning-services/) to make working on ML projects easier, faster and much more efficient
+<!-- - How to create a web service with a trained model and deploy it to Azure
+- How to leverage [Azure Machine Learning Service](https://azure.microsoft.com/en-us/services/machine-learning-services/) to make working on ML projects easier, faster and much more efficient -->
 
-
+<!-- 
 #### The team: ####
 - [Karol Żak](https://twitter.com/karolzak13) ([GitHub](https://github.com/karolzak)) - Software Development Engineer, Microsoft
 - [Filip Glavota](https://twitter.com/fglavota) - Software Development Engineer, Microsoft
@@ -46,7 +47,7 @@ Our combined team tried 3 different approaches to tackle this challenge using:
 
 ![](docs/endava_team.jpg)
 
-
+-->
 <br>
 
 # 2. Results and learnings
